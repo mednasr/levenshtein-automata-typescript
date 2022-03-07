@@ -1,0 +1,33 @@
+<button >
+<a class="nav-link" routerLink="/dnas/add" routerLinkActive="active"><i class="fas fa-plus-circle"></i>ADD dnas</a>
+</button>
+<ul class="navbar-nav ml-auto">
+  <li class="nav-item">
+    <input
+      class="form-control"
+      type="number"
+      placeholder="Distance"
+      [(ngModel)]="Levdistance">
+  </li>
+  <li class="nav-item">
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Search"
+      [(ngModel)]="searchedValue">
+</ul>
+
+    <button onClick="window.location.href=window.location.href">
+      <a class="nav-link" [routerLink]="['/dnas/', searchedValue,Levdistance]" routerLinkActive="active"><i
+        class="fas fa-search"></i>Leveinstein distance search</a>
+    </button>
+
+<div class="container">
+  <div class="col-md-4" *ngFor="let dna of dnas">
+    <div class="card text-center">
+      <div class="card-body">
+        <p>{{ dna }}</p>
+      </div>
+    </div>
+  </div>
+</div>

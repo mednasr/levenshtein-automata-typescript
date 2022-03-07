@@ -1,0 +1,39 @@
+<div class="container" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="location.pathname === '/dnas/add'">
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" >
+          <a class="btn btn-success btn-block" [routerLink]="['/dnas/Search/0']" routerLinkActive="active"><i class="fas fa-search"></i>Leveinstein distance search</a>
+          </li>
+          <li class="nav-item" >
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Search"
+                [(ngModel)]="searchedValue">
+          </li>
+          <li class="nav-item" >
+              <button  [routerLink]="['/dnas/search/', searchedValue,'']" routerLinkActive="active" class="btn btn-success btn-block" [disabled]="!searchedValue">Search</button >
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+  <div class="col-md-4">
+
+    <div class="card card-body text-center" *ngIf="dna.id !== 0">
+      <h3>{{ dna.id }}. {{ dna.string == '' ? 'Dna title': dna.string}}</h3>
+      <button class="nav-link_button">
+        <a class="nav-link" routerLink="/dnas/add" routerLinkActive="active"><i class="fas fa-plus-circle"></i>ADD dnas</a>
+
+      </button >
+
+    </div>
+
+  </div>
+
+</div>
+
+
+

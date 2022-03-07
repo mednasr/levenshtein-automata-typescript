@@ -1,0 +1,14 @@
+.navbar-nav.ml-auto
+{
+  margin: auto;
+
+}
+.col-md-4
+{
+  margin: auto;
+}
+.nav-link_button{
+  margin-top: 100px;
+  position: absolute;
+  width: 295px;
+}

@@ -1,0 +1,14 @@
+.container
+{
+  display: inline-block;
+  margin-top: 20px;
+}
+.navbar-nav.ml-auto
+{
+  display: flex ;
+  flex-direction: row ;
+}
+.container .col-md-4
+{
+  padding:10px;
+}
