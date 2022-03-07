@@ -42,6 +42,6 @@ The application exposes 3 rest REST endpoints
 `HTTP` `GET` /api/dnas ( for Levenshtein Distance )
 ![Levenshtein](client/src/assets/img/distance.png)
 `HTTP` `GET` /api/dna/:string ( get one dna string )
-![search](client/src/assets/img/simple search.png)
+![search](client/src/assets/img/simplesearch.png)
 `HTTP` `POST` /api/dnas/add ( add dna string )
 ![add](client/src/assets/img/add.png)
